@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="animation"></div>
+</div>
+
+<style>
+.animation {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 10px solid #5ABB63;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
