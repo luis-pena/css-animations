@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="box"><p>Hover Here</p></div>
+</div>
+
+<style>
+.box {
+  width: 20rem;
+  height: 8rem;
+  background: #1ab1d6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box p {
+  color: white;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+}
+.box:hover {
+  animation: anim .8s cubic-bezier(1,1,0,0);
+  cursor: pointer;
+}
+
+@keyframes anim {
+  0% {
+    width: 20rem;
+  }
+  25% {
+    width: 18rem;
+    height: 8rem;
+  }
+  50% {
+    width: 18rem;
+    height: 6rem;
+  }
+  75% {
+    width: 20rem;
+    height: 8rem;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
